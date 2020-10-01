@@ -15,10 +15,11 @@ export class AddTheaterComponent implements OnInit {
 
   theaterresp:theaterResponse=null;
   show:boolean=false;
-  __service:TheaterServiceService;
+ // __service:TheaterServiceService;
 
-  constructor(__service:TheaterServiceService) {
-    this.__service=__service;
+  constructor(private __service:TheaterServiceService) {
+    // Once private keyword is added there is no need for any other declaration , OKAY?
+   // this.__service=__service;
    }
 
   ngOnInit(): void {
